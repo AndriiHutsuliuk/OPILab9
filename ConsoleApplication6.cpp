@@ -9,15 +9,16 @@
 using namespace std;
 int main()
 {
-	float x, y,y1;
-	cout << "Input x:";
-	cin >> x;
+	float c, y,y1;
+	cout << "Input c:";
+	cin >> c;
 	y1 = 0;
 	for (int i = 1; i < 10; i++) {
-		y1+=log(x * i);
+		y1+=log(c * i);
 	}
-	y = cos(x) + y1 / pow(x, 2) + 2;
+	y = cos(c) + y1 / pow(c, 2) + 2;
 	cout << "Y=" << setprecision(3) << y << endl;
+	return 0;
 }
 
 
